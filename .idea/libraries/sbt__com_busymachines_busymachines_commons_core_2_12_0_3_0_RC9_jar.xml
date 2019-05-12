@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: com.busymachines:busymachines-commons-core_2.12:0.3.0-RC9:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.busymachines/busymachines-commons-core_2.12/0.3.0-RC9/jars/busymachines-commons-core_2.12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.busymachines/busymachines-commons-core_2.12/0.3.0-RC9/docs/busymachines-commons-core_2.12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/local/com.busymachines/busymachines-commons-core_2.12/0.3.0-RC9/srcs/busymachines-commons-core_2.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

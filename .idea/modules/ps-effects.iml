@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="ps-effects [file:/Users/eusebiu/Documents/parking-backend/]" external.linked.project.path="$MODULE_DIR$/../../ps-effects" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../ps-effects/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../ps-effects/target/scala-2.12/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../ps-effects">
+      <sourceFolder url="file://$MODULE_DIR$/../../ps-effects/target/scala-2.12/src_managed/main" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ps-effects/target/scala-2.12/src_managed/test" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../ps-effects/src/main/scala" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../ps-effects/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-core_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-duration_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-effects-async_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-effects-sync-cats_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-effects-sync_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.busymachines:busymachines-commons-effects_2.12:0.3.0-RC9:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-catnap_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-eval_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-execution_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-java_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-reactive_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix-tail_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.monix:monix_2.12:3.0.0-RC2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jctools:jctools-core:2.1.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.12.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.12.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-core_2.12:1.5.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-effect_2.12:1.2.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-kernel_2.12:1.5.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-macros_2.12:1.5.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:machinist_2.12:0.6.6:jar" level="project" />
+  </component>
+</module>

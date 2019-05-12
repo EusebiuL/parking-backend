@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.busymachines:pureharm-core_2.12:0.0.2-M3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.busymachines/pureharm-core_2.12/jars/pureharm-core_2.12-0.0.2-M3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.busymachines/pureharm-core_2.12/srcs/pureharm-core_2.12-0.0.2-M3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

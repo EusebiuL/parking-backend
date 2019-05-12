@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-auth.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-google.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-google.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-http-sec.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-http-sec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-jira.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-jira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-user.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/organizer-user.iml" filepath="$PROJECT_DIR$/.idea/modules/organizer-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parking.iml" filepath="$PROJECT_DIR$/.idea/modules/parking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parking-build.iml" filepath="$PROJECT_DIR$/.idea/modules/parking-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-config.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-core.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-db.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-effects.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-effects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-http.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-json.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-server.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-server.iml" />
+    </modules>
+  </component>
+</project>
