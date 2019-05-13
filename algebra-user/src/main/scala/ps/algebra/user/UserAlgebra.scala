@@ -4,9 +4,9 @@ package ps.algebra.user
 import cats.effect.Resource
 import doobie.util.transactor.Transactor
 import io.chrisdavenport.log4cats.SelfAwareStructuredLogger
-import ps.algebra.user.entities.Car
+import ps.algebra.user.entities.{Car, ReportDefinition, UserDefinition}
 import ps.algebra.user.impl.UserRepository
-import ps.core.{ DeviceID}
+import ps.core.DeviceID
 import ps.db.DatabaseContext
 import ps.effects.Async
 
@@ -18,11 +18,15 @@ import ps.effects.Async
 
 trait UserAlgebra[F[_]] {
 
+  def updateUser(userDefinition: UserDefinition): F[UserID]
+
   def createDevice(userId: UserID): F[DeviceID]
 
   def updateCar(userId: UserID, carNumber: CarNumber): F[Car]
 
   def deleteCar(carId: CarID): F[Int]
+
+  def reportUser(reportDefinition: ReportDefinition): F[ReportID]
 
   def deactivateUser(userId: UserID): F[UserID]
 

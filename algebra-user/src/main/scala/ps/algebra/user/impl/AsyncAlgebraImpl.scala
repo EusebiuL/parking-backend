@@ -1,10 +1,10 @@
 package ps.algebra.user.impl
 
-import busymachines.core.NotFoundFailure
+import busymachines.core.{InvalidInputFailure, NotFoundFailure}
 import doobie.util.transactor.Transactor
 import io.chrisdavenport.log4cats.SelfAwareStructuredLogger
-import ps.algebra.user.entities.Car
-import ps.algebra.user.{CarID, CarNumber, UserAlgebra, UserID}
+import ps.algebra.user.entities.{Car, ReportDefinition, UserDefinition}
+import ps.algebra.user.{CarID, CarNumber, ReportID, UserAlgebra, UserID}
 import ps.core.{BlockingAlgebra, DeviceID}
 import ps.db.{DatabaseAlgebra, DatabaseContext}
 import ps.effects.Async
@@ -26,6 +26,13 @@ final private[user] class AsyncAlgebraImpl[F[_]](
     with DatabaseAlgebra[F]
     with BlockingAlgebra[F] {
 
+  override def updateUser(userDefinition: UserDefinition): F[UserID] = transact {
+    for {
+      _ <- userRepository.findActiveUserById(userDefinition.userId).flatMap(exists(_, NotFoundFailure(s"User with id ${userDefinition.userId} was not found")))
+      _ <- userRepository.updateUser(userDefinition)
+    } yield userDefinition.userId
+  }
+
   override def createDevice(userId: UserID): F[DeviceID] =
     transact(UserSql.insertDevice(userId))
 
@@ -33,9 +40,27 @@ final private[user] class AsyncAlgebraImpl[F[_]](
     transact(userRepository.deleteDeviceById(deviceId))
   }
 
-  override def updateCar(userId: UserID, carNumber: CarNumber): F[Car] = ???
+  override def updateCar(userId: UserID, carNumber: CarNumber): F[Car] =
+    transact {
+      for {
+        _ <- userRepository
+          .findActiveUserById(userId)
+          .flatMap(
+            exists(_, NotFoundFailure(s"User with id ${userId} was not found")))
+        _ <- userRepository.findCarByNumber(carNumber).flatMap {
+          case Some(_) =>
+            raiseError[Unit](
+              InvalidInputFailure(
+                s"Car with number ${carNumber} already exists"))
+          case None => unit
+        }
+        carId <- userRepository.insertCarForUser(userId, carNumber)
+      } yield Car(carId, carNumber)
+    }
 
-  override def deleteCar(carId: CarID): F[Int] = ???
+  override def deleteCar(carId: CarID): F[Int] =
+    transact(userRepository.deleteCarById(carId))
+
 
   override def deactivateUser(userId: UserID): F[UserID] = transact {
     for {

@@ -1,7 +1,7 @@
 package ps.organizer.user.rest
 
 import ps.algebra.auth.AuthCtx
-import ps.algebra.user.entities.{Car, User, UserRegistration}
+import ps.algebra.user.entities.{Car, User, UserDefinition, UserRegistration}
 import ps.algebra.user.{CarID, CarNumber, UserID}
 import ps.core.{AuthenticationToken, DeviceID, Email, Name, Password}
 import ps.json._
@@ -34,6 +34,8 @@ trait UserOrganizerJSON extends ParkingJson with TimeJson {
   implicit val carCirceCodec: Codec[Car] = derive.codec[Car]
 
   implicit val userRegistrationCirceCodec: Codec[UserRegistration] = derive.codec[UserRegistration]
+
+  implicit val userDefinitionCirceCodec: Codec[UserDefinition] = derive.codec[UserDefinition]
 
   implicit val userCirceCodec: Codec[User] = derive.codec[User]
 

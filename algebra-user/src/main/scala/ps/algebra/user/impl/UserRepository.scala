@@ -1,8 +1,8 @@
 package ps.algebra.user.impl
 
 import doobie.ConnectionIO
-import ps.algebra.user.UserID
-import ps.algebra.user.entities.{Car, UserDB}
+import ps.algebra.user.{CarID, CarNumber, UserID}
+import ps.algebra.user.entities.{Car, UserDB, UserDefinition}
 import ps.core.{DeviceID, Email, Name}
 
 /**
@@ -18,6 +18,8 @@ trait UserRepository {
 
   def findByName(name: Name): ConnectionIO[Option[UserDB]]
 
+  def updateUser(userDefinition: UserDefinition): ConnectionIO[UserID]
+
   def insertDevice(userId: UserID): ConnectionIO[DeviceID]
 
   def deactivateUserById(userId: UserID): ConnectionIO[Int]
@@ -25,5 +27,11 @@ trait UserRepository {
   def deleteDeviceById(deviceId: DeviceID): ConnectionIO[Int]
 
   def findCarsForUser(userId: UserID): ConnectionIO[List[Car]]
+
+  def findCarByNumber(carNumber: CarNumber): ConnectionIO[Option[Car]]
+
+  def insertCarForUser(userId: UserID, carNumber: CarNumber): ConnectionIO[CarID]
+
+  def deleteCarById(carId: CarID): ConnectionIO[Int]
 
 }

@@ -7,155 +7,19 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190512204934"/>
+		date="20190512234738"/>
 	<dependencies>
 		<module organisation="algebra-user" name="algebra-user_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="94">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512234734" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="94">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="algebra-google" name="algebra-google_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="95">
-				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="http4s-blaze-client_2.12">
-			<revision name="0.20.0-M5" status="release" pubdate="20190113063317" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="105">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="4007" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-client_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-client_2.12/0.20.0-M5/http4s-blaze-client_2.12-0.20.0-M5.pom"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.1.0-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="http4s-blaze-client_2.12" type="jar" ext="jar" status="no" details="" size="100511" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-client_2.12/jars/http4s-blaze-client_2.12-0.20.0-M5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-client_2.12/0.20.0-M5/http4s-blaze-client_2.12-0.20.0-M5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="http4s-client_2.12">
-			<revision name="0.20.0-M5" status="release" pubdate="20190113063143" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="4489" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-client_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-client_2.12/0.20.0-M5/http4s-client_2.12-0.20.0-M5.pom"/>
-				<caller organisation="org.http4s" name="http4s-blaze-client_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<artifacts>
-					<artifact name="http4s-client_2.12" type="jar" ext="jar" status="no" details="" size="177934" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-client_2.12/jars/http4s-client_2.12-0.20.0-M5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-client_2.12/0.20.0-M5/http4s-client_2.12-0.20.0-M5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="ps-http" name="ps-http_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="96">
-				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="http4s-blaze-server_2.12">
-			<revision name="0.20.0-M5" status="release" pubdate="20190113063328" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="98">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="4007" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-server_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-server_2.12/0.20.0-M5/http4s-blaze-server_2.12-0.20.0-M5.pom"/>
-				<caller organisation="ps-http" name="ps-http_2.12" conf="compile" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.1.0-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="http4s-blaze-server_2.12" type="jar" ext="jar" status="no" details="" size="116809" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-server_2.12/jars/http4s-blaze-server_2.12-0.20.0-M5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-server_2.12/0.20.0-M5/http4s-blaze-server_2.12-0.20.0-M5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="http4s-server_2.12">
-			<revision name="0.20.0-M5" status="release" pubdate="20190113063203" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="4093" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-server_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-server_2.12/0.20.0-M5/http4s-server_2.12-0.20.0-M5.pom"/>
-				<caller organisation="org.http4s" name="http4s-blaze-server_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<artifacts>
-					<artifact name="http4s-server_2.12" type="jar" ext="jar" status="no" details="" size="374839" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-server_2.12/jars/http4s-server_2.12-0.20.0-M5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-server_2.12/0.20.0-M5/http4s-server_2.12-0.20.0-M5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="http4s-blaze-core_2.12">
-			<revision name="0.20.0-M5" status="release" pubdate="20190113063143" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="99">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="4145" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-core_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-core_2.12/0.20.0-M5/http4s-blaze-core_2.12-0.20.0-M5.pom"/>
-				<caller organisation="org.http4s" name="http4s-blaze-client_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<caller organisation="org.http4s" name="http4s-blaze-server_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<artifacts>
-					<artifact name="http4s-blaze-core_2.12" type="jar" ext="jar" status="no" details="" size="106795" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-blaze-core_2.12/jars/http4s-blaze-core_2.12-0.20.0-M5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-blaze-core_2.12/0.20.0-M5/http4s-blaze-core_2.12-0.20.0-M5.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="blaze-http_2.12">
-			<revision name="0.14.0-M12" status="release" pubdate="20190111202749" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/http4s/blaze" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="100">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3500" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/blaze-http_2.12/ivy-0.14.0-M12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/blaze-http_2.12/0.14.0-M12/blaze-http_2.12-0.14.0-M12.pom"/>
-				<caller organisation="org.http4s" name="http4s-blaze-core_2.12" conf="compile, runtime" rev="0.14.0-M12" rev-constraint-default="0.14.0-M12" rev-constraint-dynamic="0.14.0-M12" callerrev="0.20.0-M5"/>
-				<artifacts>
-					<artifact name="blaze-http_2.12" type="jar" ext="jar" status="no" details="" size="595042" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/blaze-http_2.12/jars/blaze-http_2.12-0.14.0-M12.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/blaze-http_2.12/0.14.0-M12/blaze-http_2.12-0.14.0-M12.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.eclipse.jetty.alpn" name="alpn-api">
-			<revision name="1.1.3.v20160715" status="release" pubdate="20160715062221" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
-				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
-				<metadata-artifact status="no" details="" size="3360" time="0" location="/Users/eusebiu/.ivy2/cache/org.eclipse.jetty.alpn/alpn-api/ivy-1.1.3.v20160715.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/alpn/alpn-api/1.1.3.v20160715/alpn-api-1.1.3.v20160715.pom"/>
-				<caller organisation="org.http4s" name="blaze-http_2.12" conf="compile, runtime" rev="1.1.3.v20160715" rev-constraint-default="1.1.3.v20160715" rev-constraint-dynamic="1.1.3.v20160715" callerrev="0.14.0-M12"/>
-				<artifacts>
-					<artifact name="alpn-api" type="jar" ext="jar" status="no" details="" size="5557" time="0" location="/Users/eusebiu/.ivy2/cache/org.eclipse.jetty.alpn/alpn-api/jars/alpn-api-1.1.3.v20160715.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/alpn/alpn-api/1.1.3.v20160715/alpn-api-1.1.3.v20160715.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="com.twitter" name="hpack">
-			<revision name="1.0.2" status="release" pubdate="20160325002836" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="4897" time="0" location="/Users/eusebiu/.ivy2/cache/com.twitter/hpack/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2.pom"/>
-				<caller organisation="org.http4s" name="blaze-http_2.12" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.14.0-M12"/>
-				<artifacts>
-					<artifact name="hpack" type="jar" ext="jar" status="no" details="" size="29339" time="0" location="/Users/eusebiu/.ivy2/cache/com.twitter/hpack/jars/hpack-1.0.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.http4s" name="blaze-core_2.12">
-			<revision name="0.14.0-M12" status="release" pubdate="20190111202741" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/http4s/blaze" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
-				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3178" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/blaze-core_2.12/ivy-0.14.0-M12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/blaze-core_2.12/0.14.0-M12/blaze-core_2.12-0.14.0-M12.pom"/>
-				<caller organisation="org.http4s" name="blaze-http_2.12" conf="compile, runtime" rev="0.14.0-M12" rev-constraint-default="0.14.0-M12" rev-constraint-dynamic="0.14.0-M12" callerrev="0.14.0-M12"/>
-				<artifacts>
-					<artifact name="blaze-core_2.12" type="jar" ext="jar" status="no" details="" size="312969" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/blaze-core_2.12/jars/blaze-core_2.12-0.14.0-M12.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/blaze-core_2.12/0.14.0-M12/blaze-core_2.12-0.14.0-M12.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="ps-json" name="ps-json_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="97">
-				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="ps-http" name="ps-http_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="ps-db" name="ps-db_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="28">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512234734" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="28">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
@@ -272,13 +136,10 @@
 			</revision>
 		</module>
 		<module organisation="ps-core" name="ps-core_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="29">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512234734" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="29">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-db" name="ps-db_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="ps-http" name="ps-http_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 				</artifacts>
@@ -683,7 +544,6 @@
 			<revision name="0.3.0-RC9" status="release" pubdate="20190131151006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/busymachines/busymachines-commons" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="49">
 				<license name="APL2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="4456" time="0" location="/Users/eusebiu/.ivy2/cache/com.busymachines/busymachines-commons-json_2.12/ivy-0.3.0-RC9.xml" searched="false" origin-is-local="true" origin-location="/Users/eusebiu/.ivy2/local/com.busymachines/busymachines-commons-json_2.12/0.3.0-RC9/ivys/ivy.xml"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.3.0-RC9" rev-constraint-default="0.3.0-RC9" rev-constraint-dynamic="0.3.0-RC9" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.3.0-RC9" rev-constraint-default="0.3.0-RC9" rev-constraint-dynamic="0.3.0-RC9" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="busymachines-commons-json_2.12" type="jar" ext="jar" status="no" details="" size="93888" time="0" location="/Users/eusebiu/.ivy2/local/com.busymachines/busymachines-commons-json_2.12/0.3.0-RC9/jars/busymachines-commons-json_2.12.jar">
@@ -741,7 +601,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3269" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-generic-extras_2.12/ivy-0.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-generic-extras_2.12/0.11.1/circe-generic-extras_2.12-0.11.1.pom"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-json_2.12" conf="compile" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.3.0-RC9"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-core_2.12" conf="compile, runtime" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-mac_2.12" conf="default, compile, runtime, master" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-sig_2.12" conf="default, compile, runtime, master" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
@@ -756,7 +615,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3269" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-generic-extras_2.12/ivy-0.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-generic-extras_2.12/0.11.0/circe-generic-extras_2.12-0.11.0.pom"/>
 				<evicted-by rev="0.11.1"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 				</artifacts>
@@ -775,7 +633,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3389" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-generic_2.12/ivy-0.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.11.1/circe-generic_2.12-0.11.1.pom"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-json_2.12" conf="compile" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.3.0-RC9"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.11.1"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-core_2.12" conf="compile, runtime" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-mac_2.12" conf="default, compile, runtime, master" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
@@ -792,7 +649,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3389" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-generic_2.12/ivy-0.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.11.0/circe-generic_2.12-0.11.0.pom"/>
 				<evicted-by rev="0.11.1"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.11.0"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
@@ -812,7 +668,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3082" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-core_2.12/ivy-0.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-core_2.12/0.11.1/circe-core_2.12-0.11.1.pom"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-json_2.12" conf="compile" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.3.0-RC9"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="0.11.1" rev-constraint-default="0.11.1" rev-constraint-dynamic="0.11.1" callerrev="0.11.1"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-core_2.12" conf="compile, runtime" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1-M11"/>
 				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.11.0"/>
@@ -832,7 +687,6 @@
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3082" time="0" location="/Users/eusebiu/.ivy2/cache/io.circe/circe-core_2.12/ivy-0.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-core_2.12/0.11.0/circe-core_2.12-0.11.0.pom"/>
 				<evicted-by rev="0.11.1"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.11.0"/>
 				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.11.0"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.11.0" rev-constraint-default="0.11.0" rev-constraint-dynamic="0.11.0" callerrev="0.1.0-SNAPSHOT"/>
@@ -885,7 +739,6 @@
 			<revision name="0.20.0-M5" status="release" pubdate="20190113063325" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://http4s.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="38">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4373" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-circe_2.12/ivy-0.20.0-M5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/http4s/http4s-circe_2.12/0.20.0-M5/http4s-circe_2.12-0.20.0-M5.pom"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="http4s-circe_2.12" type="jar" ext="jar" status="no" details="" size="26709" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-circe_2.12/jars/http4s-circe_2.12-0.20.0-M5.jar">
@@ -945,9 +798,6 @@
 				<caller organisation="org.http4s" name="http4s-circe_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
 				<caller organisation="org.http4s" name="http4s-jawn_2.12" conf="compile, runtime" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
 				<caller organisation="org.http4s" name="http4s-dsl_2.12" conf="default, compile, runtime, master" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<caller organisation="org.http4s" name="http4s-client_2.12" conf="compile, runtime" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<caller organisation="org.http4s" name="http4s-server_2.12" conf="compile, runtime" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
-				<caller organisation="org.http4s" name="http4s-blaze-core_2.12" conf="compile, runtime" rev="0.20.0-M5" rev-constraint-default="0.20.0-M5" rev-constraint-dynamic="0.20.0-M5" callerrev="0.20.0-M5"/>
 				<artifacts>
 					<artifact name="http4s-core_2.12" type="jar" ext="jar" status="no" details="" size="2082998" time="0" location="/Users/eusebiu/.ivy2/cache/org.http4s/http4s-core_2.12/jars/http4s-core_2.12-0.20.0-M5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/http4s/http4s-core_2.12/0.20.0-M5/http4s-core_2.12-0.20.0-M5.jar"/>
@@ -973,7 +823,6 @@
 				<metadata-artifact status="no" details="" size="3613" time="0" location="/Users/eusebiu/.ivy2/cache/org.log4s/log4s_2.12/ivy-1.6.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/log4s/log4s_2.12/1.6.1/log4s_2.12-1.6.1.pom"/>
 				<caller organisation="org.http4s" name="http4s-core_2.12" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.20.0-M5"/>
 				<caller organisation="io.github.jmcardon" name="tsec-libsodium_2.12" conf="default, compile, runtime, master" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="0.0.1-M11"/>
-				<caller organisation="org.http4s" name="blaze-core_2.12" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.14.0-M12"/>
 				<artifacts>
 					<artifact name="log4s_2.12" type="jar" ext="jar" status="no" details="" size="66927" time="0" location="/Users/eusebiu/.ivy2/cache/org.log4s/log4s_2.12/jars/log4s_2.12-1.6.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/log4s/log4s_2.12/1.6.1/log4s_2.12-1.6.1.jar"/>
@@ -1179,9 +1028,8 @@
 			</revision>
 		</module>
 		<module organisation="ps-config" name="ps-config_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512234734" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-db" name="ps-db_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
@@ -1241,14 +1089,11 @@
 			</revision>
 		</module>
 		<module organisation="ps-effects" name="ps-effects_2.12">
-			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512204917" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="2">
+			<revision name="0.1.0-SNAPSHOT" status="integration" pubdate="20190512234734" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="2">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-db" name="ps-db_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-config" name="ps-config_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="ps-http" name="ps-http_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="0.1.0-SNAPSHOT" rev-constraint-default="0.1.0-SNAPSHOT" rev-constraint-dynamic="0.1.0-SNAPSHOT" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
@@ -1616,104 +1461,94 @@
 			<revision name="2.12.8" status="release" pubdate="20181204121556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/eusebiu/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.pom"/>
+				<caller organisation="com.busymachines" name="busymachines-commons-json_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
+				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
+				<caller organisation="io.monix" name="monix-eval_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
+				<caller organisation="org.http4s" name="http4s-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.12.8"/>
 				<caller organisation="io.github.jmcardon" name="tsec-bouncy_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
 				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
 				<caller organisation="ps-core" name="ps-core_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.6"/>
+				<caller organisation="io.github.jmcardon" name="tsec-hash-jca_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="algebra-notification" name="algebra-notification_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.typelevel" name="catalysts-platform_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6"/>
 				<caller organisation="ps-db" name="ps-db_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.circe" name="circe-numbers_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-mac_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="org.http4s" name="jawn-fs2_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.14.1"/>
+				<caller organisation="io.github.jmcardon" name="tsec-cipher-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="com.github.pureconfig" name="pureconfig-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.9.1"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
 				<caller organisation="org.typelevel" name="cats-effect_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.2.0"/>
+				<caller organisation="org.typelevel" name="discipline_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.9.0"/>
 				<caller organisation="org.log4s" name="log4s_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.1"/>
-				<caller organisation="ps-json" name="ps-json_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="ps-effects" name="ps-effects_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="org.http4s" name="http4s-jawn_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
 				<caller organisation="algebra-user" name="algebra-user_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-effects-sync_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="io.github.jmcardon" name="tsec-hash-bouncy_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
-				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
-				<caller organisation="org.tpolecat" name="doobie-hikari_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
-				<caller organisation="org.scodec" name="scodec-bits_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.7"/>
-				<caller organisation="org.http4s" name="http4s-blaze-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
-				<caller organisation="org.typelevel" name="jawn-parser_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.14.1"/>
-				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6.6"/>
-				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
-				<caller organisation="com.busymachines" name="pureharm-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.2-M3"/>
-				<caller organisation="org.http4s" name="http4s-blaze-server_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
-				<caller organisation="org.http4s" name="blaze-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.14.0-M12"/>
-				<caller organisation="algebra-google" name="algebra-google_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="co.fs2" name="fs2-io_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.2"/>
-				<caller organisation="org.http4s" name="http4s-client_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
-				<caller organisation="io.github.jmcardon" name="tsec-common_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
-				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
-				<caller organisation="io.chrisdavenport" name="log4cats-slf4j_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
-				<caller organisation="org.http4s" name="http4s-circe_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
-				<caller organisation="com.busymachines" name="busymachines-commons-core_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
-				<caller organisation="io.monix" name="monix-tail_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
-				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.3.2"/>
-				<caller organisation="io.chrisdavenport" name="linebacker_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
-				<caller organisation="ps-config" name="ps-config_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
-				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.5.0"/>
-				<caller organisation="org.tpolecat" name="doobie-postgres_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
-				<caller organisation="io.circe" name="circe-parser_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
-				<caller organisation="io.monix" name="monix_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
-				<caller organisation="org.http4s" name="blaze-http_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.14.0-M12"/>
-				<caller organisation="com.busymachines" name="busymachines-commons-json_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
-				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
-				<caller organisation="io.monix" name="monix-eval_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
-				<caller organisation="org.http4s" name="http4s-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
-				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.6"/>
-				<caller organisation="io.github.jmcardon" name="tsec-hash-jca_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
-				<caller organisation="org.typelevel" name="catalysts-platform_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6"/>
-				<caller organisation="io.github.jmcardon" name="tsec-cipher-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
-				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
-				<caller organisation="org.typelevel" name="discipline_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.9.0"/>
-				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-duration_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="io.monix" name="monix-reactive_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
-				<caller organisation="org.http4s" name="http4s-server_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
+				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
 				<caller organisation="org.http4s" name="parboiled_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.0"/>
+				<caller organisation="org.tpolecat" name="doobie-hikari_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
+				<caller organisation="org.scodec" name="scodec-bits_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.7"/>
 				<caller organisation="io.chrisdavenport" name="log4cats-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
+				<caller organisation="org.typelevel" name="jawn-parser_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.14.1"/>
 				<caller organisation="io.github.jmcardon" name="tsec-cipher-jca_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-effects_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="org.http4s" name="http4s-dsl_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
 				<caller organisation="io.chrisdavenport" name="log4cats-slf4j-internal_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6.6"/>
+				<caller organisation="io.circe" name="circe-generic_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
+				<caller organisation="com.busymachines" name="pureharm-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.2-M3"/>
 				<caller organisation="com.chuusai" name="shapeless_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.3.3"/>
 				<caller organisation="io.circe" name="circe-numbers_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
 				<caller organisation="org.systemfw" name="upperbound_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0-M2"/>
 				<caller organisation="co.fs2" name="fs2-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.2"/>
 				<caller organisation="org.tpolecat" name="doobie-free_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
 				<caller organisation="io.circe" name="circe-core_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.0"/>
+				<caller organisation="co.fs2" name="fs2-io_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.0.2"/>
 				<caller organisation="org.typelevel" name="cats-laws_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
 				<caller organisation="org.tpolecat" name="doobie-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
-				<caller organisation="org.http4s" name="http4s-blaze-client_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
+				<caller organisation="io.github.jmcardon" name="tsec-common_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-effects-sync-cats_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="io.monix" name="monix-java_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
+				<caller organisation="io.chrisdavenport" name="log4cats-slf4j_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
 				<caller organisation="io.github.jmcardon" name="tsec-cipher-bouncy_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
+				<caller organisation="org.http4s" name="http4s-circe_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.20.0-M5"/>
 				<caller organisation="io.circe" name="circe-generic-extras_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
 				<caller organisation="io.github.jmcardon" name="tsec-mac_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="io.monix" name="monix-execution_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
 				<caller organisation="org.typelevel" name="cats-collections-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0"/>
+				<caller organisation="com.busymachines" name="busymachines-commons-core_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="io.monix" name="monix-catnap_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
 				<caller organisation="org.typelevel" name="cats-kernel-laws_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.6.0"/>
+				<caller organisation="io.monix" name="monix-tail_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
+				<caller organisation="com.chuusai" name="shapeless_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.3.2"/>
 				<caller organisation="com.github.pureconfig" name="pureconfig_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.9.1"/>
 				<caller organisation="io.github.jmcardon" name="tsec-signatures_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
+				<caller organisation="io.chrisdavenport" name="linebacker_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.2.0"/>
 				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.5.0"/>
 				<caller organisation="org.scalacheck" name="scalacheck_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.13.5"/>
+				<caller organisation="ps-config" name="ps-config_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="org.typelevel" name="catalysts-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.6"/>
 				<caller organisation="io.github.jmcardon" name="tsec-password_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="io.github.jmcardon" name="tsec-jwt-sig_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
-				<caller organisation="ps-http" name="ps-http_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.0-SNAPSHOT"/>
 				<caller organisation="io.github.jmcardon" name="tsec-libsodium_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.0.1-M11"/>
 				<caller organisation="com.busymachines" name="busymachines-commons-effects-async_2.12" conf="compile" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.3.0-RC9"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="2.12.8"/>
+				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.5.0"/>
 				<caller organisation="com.lihaoyi" name="sourcecode_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1.5"/>
 				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.5.0"/>
+				<caller organisation="org.tpolecat" name="doobie-postgres_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.7.0-M2"/>
+				<caller organisation="io.circe" name="circe-parser_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.11.1"/>
+				<caller organisation="io.monix" name="monix_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="3.0.0-RC2"/>
 				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.1.1"/>
 				<caller organisation="org.typelevel" name="cats-free_2.12" conf="compile, runtime" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="1.5.0"/>
 				<artifacts>

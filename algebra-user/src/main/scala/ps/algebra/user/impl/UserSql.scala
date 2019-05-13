@@ -2,8 +2,8 @@ package ps.algebra.user.impl
 
 import doobie._
 import doobie.implicits._
-import ps.algebra.user.UserID
-import ps.algebra.user.entities.{Car, UserDB}
+import ps.algebra.user.{CarID, CarNumber, UserID}
+import ps.algebra.user.entities.{Car, UserDB, UserDefinition}
 import ps.core.{DeviceID, Email, Name}
 
 /**
@@ -27,6 +27,9 @@ object UserSql extends UserRepository with UserComposites {
   override def findByName(name: Name): ConnectionIO[Option[UserDB]] =
     sql"SELECT user_id, email, name, password, is_active, created_at FROM parking.user WHERE name=${name}".query[UserDB].option
 
+  override def updateUser(userDefinition: UserDefinition): ConnectionIO[UserID] =
+    sql"UPDATE parking.user SET name=${userDefinition.username}, email=${userDefinition.email} WHERE user_id=${userDefinition.userId}".update.withUniqueGeneratedKeys[UserID]("user_id")
+
   override def insertDevice(userId: UserID): doobie.ConnectionIO[DeviceID] =
     sql"INSERT INTO parking.device(u_user_id) VALUES(${userId})".update
       .withUniqueGeneratedKeys[DeviceID]("device_id")
@@ -39,5 +42,14 @@ object UserSql extends UserRepository with UserComposites {
 
   override def findCarsForUser(userId: UserID): ConnectionIO[List[Car]] =
     sql"SELECT car_id, car_number FROM parking.car WHERE u_user_id=${userId}".query[Car].to[List]
+
+  override def findCarByNumber(carNumber: CarNumber): ConnectionIO[Option[Car]] =
+    sql"SELECT car_id, car_number FROM parking.car WHERE car_number=${carNumber}".query[Car].option
+
+  override def insertCarForUser(userId: UserID, carNumber: CarNumber): ConnectionIO[CarID] =
+    sql"INSERT INTO parking.car(car_number, u_user_id) VALUES(${carNumber}, ${userId})".update.withUniqueGeneratedKeys[CarID]("car_id")
+
+  override def deleteCarById(carId: CarID): ConnectionIO[Int] =
+    sql"DELETE FROM parking.car WHERE car_id=${carId}".update.run
 
 }

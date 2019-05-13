@@ -4,7 +4,7 @@
 		module="parking-backend-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190512204848"
+		publication="20190512234718"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

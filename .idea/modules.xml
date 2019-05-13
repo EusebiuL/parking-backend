@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-auth.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-auth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-google.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-google.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-http-sec.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-http-sec.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-jira.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-jira.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algebra-user.iml" filepath="$PROJECT_DIR$/.idea/modules/algebra-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/organizer-user.iml" filepath="$PROJECT_DIR$/.idea/modules/organizer-user.iml" />

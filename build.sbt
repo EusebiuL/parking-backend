@@ -122,14 +122,12 @@ lazy val `algebra-user` = project
     `ps-db`,
     `ps-effects`,
     `ps-core`,
-    `algebra-google`
   )
   .aggregate(
     `ps-config`,
     `ps-db`,
     `ps-effects`,
     `ps-core`,
-    `algebra-google`
   )
 
 lazy val `algebra-notification` = project
@@ -148,56 +146,6 @@ lazy val `algebra-notification` = project
     `ps-effects`,
     `ps-core`,
     `algebra-user`
-  )
-
-lazy val `algebra-google` = project
-  .settings(commonSettings)
-  .settings(sbtAssemblySettings)
-  .dependsOn(
-    `ps-config`,
-    `ps-db`,
-    `ps-effects`,
-    `ps-core`,
-    `ps-http`,
-    `ps-json`
-  )
-  .aggregate(
-    `ps-config`,
-    `ps-db`,
-    `ps-effects`,
-    `ps-core`,
-    `ps-http`,
-    `ps-json`
-  )
-  .settings(
-    libraryDependencies ++= Seq(
-      http4sBlazeClient
-    )
-  )
-
-lazy val `algebra-jira` = project
-  .settings(commonSettings)
-  .settings(sbtAssemblySettings)
-  .dependsOn(
-    `ps-config`,
-    `ps-db`,
-    `ps-effects`,
-    `ps-core`,
-    `ps-http`,
-    `ps-json`
-  )
-  .aggregate(
-    `ps-config`,
-    `ps-db`,
-    `ps-effects`,
-    `ps-core`,
-    `ps-http`,
-    `ps-json`
-  )
-  .settings(
-    libraryDependencies ++= Seq(
-      http4sBlazeClient
-    )
   )
 
 lazy val `algebra-http-sec` = project

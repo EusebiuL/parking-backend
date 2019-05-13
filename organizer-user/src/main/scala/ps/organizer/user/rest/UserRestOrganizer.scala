@@ -1,12 +1,13 @@
 package ps.organizer.user.rest
 
+import cats.data.NonEmptyList
 import io.chrisdavenport.log4cats.SelfAwareStructuredLogger
 import org.http4s.{HttpRoutes, Uri}
 import org.http4s.dsl.Http4sDsl
 import ps.algebra.auth.AuthAlgebra
 import ps.algebra.http.AuthCtxService
-import ps.algebra.user.UserAlgebra
-import ps.algebra.user.entities.UserRegistration
+import ps.algebra.user.{CarID, CarNumber, UserAlgebra}
+import ps.algebra.user.entities.{UserDefinition, UserRegistration}
 import ps.effects.Async
 import cats.implicits._
 import ps.core.{Email, Password}
@@ -29,6 +30,7 @@ final class UserRestOrganizer[F[_]](
   private object EmailMatcher extends QueryParamDecoderMatcher[String]("email")
   private object PasswordMatcher
       extends QueryParamDecoderMatcher[String]("password")
+  private object CarNumberMatcher extends QueryParamDecoderMatcher[String]("number")
 
   private val logInService: HttpRoutes[F] = HttpRoutes.of[F] {
     case req @ POST -> Root / "user" / "register" =>
@@ -56,8 +58,33 @@ final class UserRestOrganizer[F[_]](
       } yield resp
   }
 
+  private val userService: AuthCtxService[F] = AuthCtxService[F] {
+    case (req @ PUT -> Root / "user") as user =>
+      for {
+        definition <- req.as[UserDefinition]
+        _ <- userAlgebra.updateUser(definition)
+        resp <- Ok()
+      } yield resp
+  }
+
+  private val carService: AuthCtxService[F] = AuthCtxService[F] {
+    case (PUT -> Root / "user" / "car" :? CarNumberMatcher(number)) as user =>
+      for {
+        carId <- userAlgebra.updateCar(user.user.userId, CarNumber(number))
+        resp <- Created(carId)
+      } yield resp
+
+    case (DELETE -> Root / "user" / "car" / LongVar(id)) as user =>
+      for {
+        _ <- userAlgebra.deleteCar(CarID(id))
+        resp <- Ok()
+      } yield resp
+  }
+
+
+
   val loginService: HttpRoutes[F] = logInService
 
-  val logoutService: AuthCtxService[F] = logOutService
+  val logoutService: AuthCtxService[F] =  NonEmptyList.of(userService, carService,logOutService).reduceK
 
 }

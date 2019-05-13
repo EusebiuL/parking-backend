@@ -16,7 +16,12 @@ package object user {
   object CarID extends PhantomType[Long]
   type CarID = CarID.Type
 
+  object ReportID extends PhantomType[Long]
+  type ReportID = ReportID.Type
+
   object CarNumber extends PhantomType[String]
   type CarNumber = CarNumber.Type
 
+  object ReportMessage extends PhantomType[String]
+  type ReportMessage = ReportMessage.Type
 }

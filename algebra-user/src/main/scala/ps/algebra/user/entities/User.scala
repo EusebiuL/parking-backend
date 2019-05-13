@@ -44,3 +44,9 @@ final case class UserRegistration(
     username: Name,
     password: Password
 ) extends Serializable
+
+final case class UserDefinition(
+    userId: UserID,
+    email: Email,
+    username: Name
+) extends Serializable

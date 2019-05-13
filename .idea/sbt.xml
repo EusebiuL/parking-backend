@@ -9,9 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/algebra-auth" />
-            <option value="$PROJECT_DIR$/algebra-google" />
             <option value="$PROJECT_DIR$/algebra-http-sec" />
-            <option value="$PROJECT_DIR$/algebra-jira" />
             <option value="$PROJECT_DIR$/algebra-notification" />
             <option value="$PROJECT_DIR$/algebra-user" />
             <option value="$PROJECT_DIR$/organizer-user" />

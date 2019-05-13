@@ -42,7 +42,8 @@ authentication_token VARCHAR(1000) NOT NULL
 CREATE TABLE parking.reports
 (
 report_id SERIAL PRIMARY KEY,
-user_id INTEGER NOT NULL,
+reported_id INTEGER NOT NULL,
+reporter_id INTEGER NOT NULL,
 report_message TEXT NOT NULL
 );
 
