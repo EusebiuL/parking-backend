@@ -1,0 +1,5 @@
+* linguist-vendored
+*.scala linguist-vendored=false
+*.gitattributes text
+.gitignore text
+*.md text
